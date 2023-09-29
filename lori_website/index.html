@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tag to help with the responsiveness of the site on different devices -->
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+	<!-- Link the CSS page to the HTML page -->
+	<link rel="stylesheet" href="style.css" />
+	
+	<!-- Link to our desired fonts from Google Fonts site-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Link to website for the icons-->
+	<script src="https://kit.fontawesome.com/07106ea502.js" crossorigin="anonymous"></script>
+
+	<!-- Title of the document -->
+	<title>Lori Hubbard</title>
+	
+</head>
+
+<body>
+	<!-- Create the class name header. This class name will be used in the CSS page -->
+	<section class="header">
+
+		<!-- Create a navigation section-->
+		<nav>
+			<!-- Create a Lori guitar logo in the navigation bar that will bring the user back to the home page-->
+			<a href="index.html"><img src="lori_images/lori_logo.png"</a>
+			
+			<!-- Create a division in the nagivation part of the site called nav-links and give it an id named navLinks-->
+			<div class="nav-links" id="navLinks">
+				<!-- Add the "x" icon for the small devices when the hamburger menu table appears
+				when the user clicks on it, the function hideMenu will be called -->
+			  <i class="fa fa-times" onclick="hideMenu()"></i>
+				<!-- Create an unordered list UL with list elements LI
+					Each element in the list with link the user to a specific part of the site 
+				-->
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="music.html">MUSIC</a></li>
+					<li><a href="press.html">PRESS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+
+			<!-- Add the menu bar icon for smaller devices
+			when the user clicks on it, the fucntion shoeMenu will be called-->
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<div class = "text-box">
+			<!-- Create a header on the home page-->
+			<h1>Lori Hubbard</h1>
+
+			<!-- Create text in a p tag
+			If this becomes too long and you want to add a secong line, put <br> where you want to Break the line
+			-->
+			<p>
+				A musician based in Montauk, NY who specializes in live performances
+			</p>
+
+		</div>
+	</section>
+
+
+	<!----------------- Services section ---------------------------->
+	<!-- Create a new section with a class named services-->
+	<section class="course">
+		<h1>My Services</h1>
+		<p> 
+			Experience the magic of live music like never before! <br>
+			Lori Hubbard brings an electrifying energy to any event, creating unforgettable moments for your audience. 
+			From intimate gatherings to large scale performances, she specializes in delivering a soul-stirring performance tailored to your unique vibe. 
+			Elevate your event with her live music expertise - where every note resonates, and every heart is moved. Click on the images below to learn more! 
+		</p>
+
+			<!-- New division in the services section-->
+			<div class="row">
+				<a href="services.html">
+				<!-- Miss Lori column-->
+					<div class="course-col">
+						<img src="lori_images/miss_lori.jpg">
+						<!-- Layer over the image -->
+						<div class="layer">
+							<h3>MISS. LORI</h3>
+						</div>
+				</a>
+				</div>
+
+				<!-- Live Music column-->
+				<div class="course-col">
+					<a href="course.html">
+						<img src="lori_images/lori_live.JPG">
+						<!-- Layer over the image -->
+						<div class="layer">
+							<h3>LIVE MUSIC</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Senior sing along column-->
+				<div class="course-col">
+					<a href="services.html">
+					<img src="lori_images/senior_sing_along.jpg">
+					<!-- Layer over the image -->
+					<div class="layer">
+						<h3>SENIOR SING ALONG</h3>
+					</div>
+					</a>
+				</div>
+
+			</div>
+	</section>
+
+
+	<!---------------- Testimonials --------------------->
+	<section class = "testimonials">
+		<h1> What my clients say </h1>
+		<p> add another description here?????</p>
+
+		<div class="row">
+			<!-- First testimonial-->
+			<div class = "testimonial-col">
+				<img src="lori_images/user1.jpg">
+				<div>
+					<p>I think shes the best </p>
+					<h3> Taylor Swift</h3>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+			</div>
+
+			<!-- Second Testimonial-->
+			<div class = "testimonial-col">
+				<img src="lori_images/user2.jpg">
+				<div>
+					<p>Best teacher </p>
+					<h3> John Smith</h3>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-------------- Home page contact ----------------->
+	<section class="home-contact">
+		<h1>Contact for more information</h1>
+		<!-- Add Contact us button-->
+		<a href="contact.html" class="hero-btn"> CONTACT US </a>
+	</section>
+
+
+	<!-------------- Footer ---------------->
+	<section class="footer">
+		<h4>Contact</h4>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-envelope"></i>
+		</div>
+		<p> Made with <i class="fa fa-heart-o"></i> by Ash. Contact for technical issues aes841@nyu.edu</p>
+	</section>
+
+
+
+
+
+<!-- Make a small JavaScript script for the user to iteract with the icons on the smaller devices to open and close the menu -->
+<script>
+	//Variable is based on the id tag
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		// To show the menu we have to change the right value of the menu table loocation
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		// To hide the menu we have to change the right value of the menu table loocation
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+
+</body>
+
+</html>

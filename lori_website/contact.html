@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tag to help with the responsiveness of the site on different devices -->
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+	
+	<!-- Link to our desired fonts from Google Fonts site-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Link to website for the icons-->
+	<script src="https://kit.fontawesome.com/07106ea502.js" crossorigin="anonymous"></script>
+
+	<!-- Title of the document -->
+	<title>University Website Design</title>
+	
+	<!-- Link the CSS page to the HTML page -->
+	<link href="styles.css" rel="stylesheet" />	
+</head>
+
+<body>
+	<!-- Create the class name header. This class name will be used in the CSS page -->
+	<section class="sub-header">
+
+		<!-- Create a navigation section-->
+		<nav>
+			<!-- Create a logo in the navigation bar that will bring the user back to the home page-->
+			<a href="index.html"><img src="lori_images/lori_logo.png"</a>
+			
+			<!-- Create a division in the nagivation part of the site called nav-links and give it an id named navLinks-->
+			<div class="nav-links" id="navLinks">
+				<!-- Add the "x" icon for the small devices when the hamburger menu table appears
+				when the user clicks on it, the function hideMenu will be called -->
+			  <i class="fa fa-times" onclick="hideMenu()"></i>
+				<!-- Create an unordered list UL with list elements LI
+					Each element in the list with link the user to a specific part of the site 
+				-->
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="music.html">MUSIC</a></li>
+					<li><a href="press.html">PRESS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<!-- Add the menu bar icon for smaller devices
+			when the user clicks on it, the fucntion shoeMenu will be called-->
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<h1>Contact Me</h1>
+
+	</section>
+	
+	<!---------------- Contact me -------------->
+
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96294.64160025235!2d-72.03848530422577!3d41.04259010575381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8ab5250fa0ef7%3A0x12eb762c1bf614f!2sMontauk%2C%20NY%2011954!5e0!3m2!1sen!2sus!4v1695920608297!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+	
+	<section class="contact-me">
+		<div class = "row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>ABC ROAD</h5>
+						<p>Montauk, NY</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>631 123-4567</h5>
+						<p>Monday - Friday, 9AM to 6PM</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<span>
+						<h5>email@gmail.com</h5>
+						<p>Email me to inquire!</p>
+					</span>
+				</div>
+			</div>
+			
+			
+		</div>
+
+
+	
+
+	<!-------------- Footer ---------------->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p> Want to know more then contact </p>
+
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-envelope"></i>
+		</div>
+		<p> made with <i class="fa fa-heart-o"></i> by ash</p>
+	</section>
+
+
+
+
+
+<!-- Make a small JavaScript script for the user to iteract with the icons on the smaller devices to open and close the menu -->
+<script>
+	//Variable is based on the id tag
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		// To show the menu we have to change the right value of the menu table loocation
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		// To hide the menu we have to change the right value of the menu table loocation
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+
+</body>
+
+</html>
