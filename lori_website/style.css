@@ -18,7 +18,7 @@
 	/* Add the background image. Add the linear gradient color and the color code
 	We have two color codes, both of which are the same. This will have a "fade" effect
 	Add the URL which is the path to where the image location is */
-	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("lori_images/lori_banner.JPG"); 
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("lori_images/lori_main_banner.jpg"); 
 	
 	/* Fix the background image position and size */
 	background-position: center;
@@ -326,7 +326,7 @@ h3{
 /*Light red color over the images in the services column section when the user hovers over it */
 .layer:hover{
 	/*Light red color with a 0.7 opacity */
-	background: rgba(226,0,0,0.7);
+	background: rgba(35, 30, 30, 0.7);
 }
 
 /* Adjust the header in the layer section of the services column on the homepage */
@@ -474,7 +474,7 @@ h3{
 .sub-header{
 	height: 50vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(lori_images/lori_background.png);
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(lori_images/lori_banner_seated.jpg);
 	background-position: center;
 	background-size: cover;
 	text-align: center;
